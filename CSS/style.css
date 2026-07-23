@@ -1,12 +1,28 @@
 :root {
   --primary-color: #fff;
   --primary-color-2: #000;
+  --primary-color-3: #4281a4;
+
   --padding: 1rem;
+  --padding-2: 2rem 1rem 0rem 1rem;
 }
 
 /* font-size 16px
 
 */
+
+/* colors tints and shades */
+/* deebf2
+bcd6e4
+9bc2d7
+79aeca
+5899bc
+4281a4
+376c89
+2c566d
+214152
+162b37
+0b161b */
 
 * {
   margin: 0;
@@ -18,6 +34,12 @@ body {
   font-family: sans-serif;
 }
 
+.main-container {
+  max-width: 23.4rem;
+
+  margin: 0 auto;
+}
+
 .navigation {
   /* display: flex;
   align-items: center;
@@ -27,10 +49,15 @@ body {
 .logo {
   /* color: black; */
   padding: var(--padding);
+  border-bottom: #000 0.5px solid;
 }
 
 .logo-link {
   text-decoration: none;
   text-align: center;
   color: var(--primary-color-2);
+}
+
+.nav-link {
+  padding: var(--padding-2);
 }
