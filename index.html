@@ -11,26 +11,100 @@
       href="./images/RYX nav.webp"
       type="image/x-icon"
     />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"
+    ></script>
   </head>
   <body>
     <div class="main-container">
+
       <nav class="navigation">
+        <div class="main-nav">
+
+        <div class="logo-side">
         <h1 class="logo"><a class="logo-link" href="#">RYX</a></h1>
 
-        <p class="nav-link">Product <span></span></p>
-        <p class="nav-link">Solutions</p>
-        <p class="nav-link">Resources</p>
-        <p class="nav-link">Pricing</p>
-        <p class="nav-link">Wixel</p>
-        <!-- <p class="demaction nav-link"></p> -->
-        <p class="nav-link">WixStudio</p>
-        <p class="nav-link">Enterprise</p>
+        <ion-icon class="main-icon" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-switch hidden" name="close-outline"></ion-icon>
+          </div>
 
+        <div class="nav">
+
+        <p class="nav-link">
+          Product <ion-icon  class="icon" name="chevron-down-outline"></ion-icon>
+        </p>
+
+        <div class="more-info">
+        <p class="creation">Creation </p>
+
+        <p class="drop-header">Software</p>
+        <p>Building software, learning and growing in realtime</p>
+        <p class="drop-header">Landing Pages</p>
+        <p>Currently building landing pages as I get better with solving software problems </p>
+        <p class="drop-header"> Challenges</p>
+
+        <p>Building out challenges Like frontend mentor and others</p>
+
+          </div>
+
+
+
+      </div>
+
+         <div class="nav">
+        <p class="nav-link">
+          Solutions
+          <ion-icon class="icon" name="chevron-up-outline"></ion-icon>
+           <ion-icon  class="icon ionic" name="chevron-down-outline"></ion-icon>
+        </p>
+        
+       
+      </div>
+
+         <div class="nav nav-res">
+        <p class="nav-link">
+          Resources
+          <ion-icon  class="icon" name="chevron-down-outline"></ion-icon></span>
+        </p>
+      </div>
+
+         <div class="nav">
+        <p class="nav-link">
+          Pricing <ion-icon class="icon"  name="chevron-down-outline"></ion-icon></span>
+        </p>
+
+
+      </div>
+
+        <!-- <p class="nav-link">Wixel <span><ion-icon name="chevron-down-outline"></ion-icon></span></p> -->
+        <!-- <p class="demaction nav-link"></p> -->
+
+          <div class="nav">
+        <p class="nav-link language">
+          <ion-icon class="icon-earth" name="globe-outline"></ion-icon>
+          English
+          <ion-icon class="icon"  name="chevron-down-outline"></ion-icon></span>
+        </p>
+      </div>
+
+         <div class="nav last-nav">
         <p></p>
         <p class="nav-link">Enterprise</p>
+        </div>
 
-        <button></button>
+
+        <div class="btn-link">
+        <button class=" btn btn-login">contact</button>
+        <button class=" btn btn-start">Get Started</button>
+          </div>
       </nav>
+      </div>
     </div>
   </body>
 </html>
