@@ -20,38 +20,61 @@
       nomodule
       src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"
     ></script>
+
+    <script src="./JS/navigation.js" defer></script>
   </head>
   <body>
     <div class="main-container">
 
       <nav class="navigation">
         <div class="main-nav">
-
+          
         <div class="logo-side">
         <h1 class="logo"><a class="logo-link" href="#">RYX</a></h1>
 
-        <ion-icon class="main-icon" name="menu-outline"></ion-icon>
-        <ion-icon class="icon-switch hidden" name="close-outline"></ion-icon>
+        <ion-icon class="main-icon hidden" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-switch main-icon " name="close-outline"></ion-icon>
           </div>
 
-        <div class="nav">
+        <div class="nav ">
 
-        <p class="nav-link">
-          Product <ion-icon  class="icon" name="chevron-down-outline"></ion-icon>
+        <p class="nav-link ">
+          Product 
+         
+          <ion-icon class="icon icon-up hidden" name="chevron-up-outline"></ion-icon>
+          <ion-icon  class=" icon-down icon" name="chevron-down-outline"></ion-icon>
+       
         </p>
+        
 
-        <div class="more-info">
+        
+          <div class="dropdown hidden">
+
+    
         <p class="creation">Creation </p>
 
-        <p class="drop-header">Software</p>
-        <p>Building software, learning and growing in realtime</p>
-        <p class="drop-header">Landing Pages</p>
-        <p>Currently building landing pages as I get better with solving software problems </p>
-        <p class="drop-header"> Challenges</p>
+        <div class="more-info ">
 
-        <p>Building out challenges Like frontend mentor and others</p>
+         <div class=" creatediv software ">
+        <p class="drop-header">Software</p>
+        <p class="drop-paragraph">Building software, learning and growing in realtime</p>
+        </div>
+
+        <div class=" creatediv landing-pages">
+        <p class="drop-header">Landing Pages</p>
+        <p class="drop-paragraph">Currently building landing pages as I get better with solving software problems </p>
+        </div>
+
+        <div class=" creatediv challenges">      
+            <p class="drop-header"> Challenges</p>
+        <p class="drop-paragraph">Building out challenges Like frontend mentor and others</p>
+        
+        </div>
+
 
           </div>
+          
+        </div>
 
 
 
@@ -60,9 +83,11 @@
          <div class="nav">
         <p class="nav-link">
           Solutions
-          <ion-icon class="icon" name="chevron-up-outline"></ion-icon>
-           <ion-icon  class="icon ionic" name="chevron-down-outline"></ion-icon>
+          
+           <ion-icon  class="icon" name="chevron-down-outline"></ion-icon>
         </p>
+
+        
         
        
       </div>

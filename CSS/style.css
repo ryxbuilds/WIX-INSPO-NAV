@@ -5,6 +5,7 @@
   --grey-thick: #4c4c4f;
   --grey: #bebfc5;
   --grey-2: #ececee;
+  --grey-3: #727376;
   --padding: 1rem;
   --padding-2: 2rem 1rem 0rem 1rem;
   --padding-3: 1rem 1.5rem 0.8rem 1.5rem;
@@ -41,10 +42,6 @@ bcd6e4
 body {
   font-family: sans-serif;
   font-size: 16px;
-}
-
-.hidden {
-  display: none;
 }
 
 .ionic {
@@ -94,6 +91,8 @@ body {
   display: flex;
   /* align-items: center; */
   margin-left: auto;
+
+  cursor: pointer;
 }
 
 .nav-link.language {
@@ -112,12 +111,40 @@ body {
 
 .creation {
   text-transform: uppercase;
-  margin: 0.6rem 0 0 0;
+  margin: 0.6rem 0 1.5rem 0;
   padding: var(--padding);
   border-bottom: var(--grey) 0.5px solid;
   /* color: var(--grey);  */
-  color: #727376;
+  color: var(--grey-3);
   font-size: 0.85rem;
+}
+
+.more-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.3rem;
+  /* padding: 0.5rem; */
+  padding: var(--padding);
+}
+
+.drop-header {
+  font-weight: 700;
+  cursor: pointer;
+  margin: 0 0 1rem 0;
+
+  /* padding: var(--padding); */
+}
+
+.creatediv {
+  cursor: pointer;
+}
+
+.creatediv p {
+  font-size: 0.9rem;
+}
+
+.drop-paragraph {
+  color: var(--grey-3);
 }
 
 .btn {
@@ -126,6 +153,7 @@ body {
   border-radius: 20px;
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
 }
 .btn-login {
   padding: var(--padding-4);
@@ -144,4 +172,8 @@ body {
 
 .last-nav {
   margin: 0 0 2rem 0;
+}
+
+.hidden {
+  display: none !important;
 }
