@@ -1,0 +1,14 @@
+Wix Navigation
+
+What I liked:
+- Large dropdown with grouped content.
+- Clean spacing.
+- Icons indicating open/closed state.
+
+What I learned:
+- Wrap related content in one parent.
+- Hide the parent instead of every child.
+- Event listeners belong on the interactive container.
+
+How I'll use it:
+- Portfolio navigation with Projects, Learning, GitHub, Contact.

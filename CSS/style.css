@@ -84,6 +84,15 @@ body {
   display: flex;
   padding: var(--padding);
   font-size: var(--font-size-2);
+  cursor: pointer;
+}
+/* Similar to main-icon */
+.icon-switch {
+  margin-left: auto;
+  display: flex;
+  padding: var(--padding);
+  font-size: var(--font-size-2);
+  cursor: pointer;
 }
 
 .nav-link {
@@ -100,8 +109,8 @@ body {
   gap: 0.3rem;
 }
 
-.nav-res {
-}
+/* .nav-res {
+} */
 
 .icon {
   display: flex;
@@ -168,6 +177,7 @@ body {
 .btn-link {
   display: flex;
   align-items: center;
+  margin: 2rem 0 0 0;
 }
 
 .last-nav {
