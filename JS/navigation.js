@@ -6,7 +6,7 @@ const showNav = document.querySelector(".main-icon");
 const closeNav = document.querySelector(".icon-switch");
 const mainNav = document.querySelector(".nav-dropdown");
 
-const lang = document.querySelectorAll(".language-name");
+const languages = document.querySelectorAll(".language-name");
 // const theLanguages = document.querySelector(".language-name");
 // const checkIcon = document.querySelector(".icon-check");
 
@@ -48,26 +48,22 @@ showNav.addEventListener("click", NavMenuAppearance);
 
 // For the language icons
 
-const langSelection = function (lang) {
+const langSelection = function (language) {
   console.log("language code is running");
 
   // const theLanguages = lang.querySelector(".language-name");
-  const checkIcon = lang.querySelector(".icon-check");
+  const checkIcon = language.querySelector(".icon-check");
 
-  const italy = lang.querySelector(".italia");
-  const english = lang.querySelector(".English");
-  const german = lang.querySelector(".german");
-  const french = lang.querySelector(".french");
-  const spanish = lang.querySelector(".spanish");
+  language.addEventListener("click", function () {
+    // checkIcon.classList.toggle("hidden");
 
-  lang.addEventListener("click", function (e) {
-    if (checkIcon === true) {
+    languages.forEach(function (language) {
+      const checkIcon = language.querySelector(".icon-check");
       checkIcon.classList.add("hidden");
-    }
-    if (checkIcon === false) {
-      checkIcon.classList("hidden");
-    }
+    });
+
+    checkIcon.classList.remove("hidden");
   });
 };
 
-lang.forEach(langSelection);
+languages.forEach(langSelection);
